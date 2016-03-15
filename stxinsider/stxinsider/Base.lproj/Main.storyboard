@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--First-->
@@ -18,40 +17,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="1400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sY-HA-5z9">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sY-HA-5z9">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="1357"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="portfolio" translatesAutoresizingMaskIntoConstraints="NO" id="Jxd-1G-2Iu">
                                         <rect key="frame" x="31" y="163" width="538" height="216"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="Jxd-1G-2Iu" secondAttribute="height" multiplier="269:108" id="J0G-6G-4Z9"/>
-                                            <constraint firstAttribute="width" secondItem="Jxd-1G-2Iu" secondAttribute="height" multiplier="269:108" id="bdS-Oa-DWF"/>
+                                            <constraint firstAttribute="width" constant="538" id="G51-es-0zf"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="events" translatesAutoresizingMaskIntoConstraints="NO" id="dZK-ye-xpk">
                                         <rect key="frame" x="31" y="387" width="538" height="211"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="dZK-ye-xpk" secondAttribute="height" multiplier="269:74" id="8aQ-Jr-0nM"/>
-                                        </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="event_background" translatesAutoresizingMaskIntoConstraints="NO" id="e1d-tk-9B4">
                                         <rect key="frame" x="31" y="606" width="538" height="211"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="e1d-tk-9B4" secondAttribute="height" multiplier="269:74" id="07y-Z4-zBs"/>
-                                        </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="portfolio" translatesAutoresizingMaskIntoConstraints="NO" id="OSP-Mr-g3M">
                                         <rect key="frame" x="31" y="825" width="538" height="211"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="OSP-Mr-g3M" secondAttribute="height" multiplier="269:74" id="QsC-2v-Lq4"/>
-                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Jxd-1G-2Iu" secondAttribute="trailing" constant="31" id="GDh-4l-fGx"/>
-                                    <constraint firstItem="Jxd-1G-2Iu" firstAttribute="leading" secondItem="6sY-HA-5z9" secondAttribute="leading" constant="31" id="IiY-D3-7hl"/>
-                                    <constraint firstItem="e1d-tk-9B4" firstAttribute="width" secondItem="e1d-tk-9B4" secondAttribute="height" multiplier="269:74" id="Ui9-sE-fTq"/>
-                                    <constraint firstItem="OSP-Mr-g3M" firstAttribute="width" secondItem="OSP-Mr-g3M" secondAttribute="height" multiplier="269:74" id="ysN-gp-n8b"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jxd-1G-2Iu" secondAttribute="trailing" constant="31" id="2xs-SD-7NA"/>
+                                    <constraint firstItem="OSP-Mr-g3M" firstAttribute="top" secondItem="e1d-tk-9B4" secondAttribute="bottom" constant="8" id="8Io-2w-brf"/>
+                                    <constraint firstItem="e1d-tk-9B4" firstAttribute="top" secondItem="dZK-ye-xpk" secondAttribute="bottom" constant="8" id="J6Y-Cs-OX6"/>
+                                    <constraint firstAttribute="trailing" secondItem="dZK-ye-xpk" secondAttribute="trailing" constant="31" id="RcE-HH-aSY"/>
+                                    <constraint firstItem="dZK-ye-xpk" firstAttribute="top" secondItem="Jxd-1G-2Iu" secondAttribute="bottom" constant="8" id="SbA-eX-0I3"/>
+                                    <constraint firstAttribute="trailing" secondItem="e1d-tk-9B4" secondAttribute="trailing" constant="31" id="Twx-7G-ysK"/>
+                                    <constraint firstItem="OSP-Mr-g3M" firstAttribute="leading" secondItem="6sY-HA-5z9" secondAttribute="leading" constant="10" id="Wbu-EU-JYq"/>
+                                    <constraint firstItem="OSP-Mr-g3M" firstAttribute="width" secondItem="Jxd-1G-2Iu" secondAttribute="width" id="Y5I-ko-kDM"/>
+                                    <constraint firstItem="dZK-ye-xpk" firstAttribute="width" secondItem="Jxd-1G-2Iu" secondAttribute="width" id="YUW-0A-A29"/>
+                                    <constraint firstItem="e1d-tk-9B4" firstAttribute="leading" secondItem="6sY-HA-5z9" secondAttribute="leading" constant="10" id="fYJ-J2-Opo"/>
+                                    <constraint firstItem="e1d-tk-9B4" firstAttribute="width" secondItem="Jxd-1G-2Iu" secondAttribute="width" id="gMH-ZB-qHL"/>
+                                    <constraint firstItem="Jxd-1G-2Iu" firstAttribute="top" secondItem="6sY-HA-5z9" secondAttribute="top" constant="200" id="kAq-yp-YjN"/>
+                                    <constraint firstItem="Jxd-1G-2Iu" firstAttribute="leading" secondItem="6sY-HA-5z9" secondAttribute="leading" constant="10" id="mco-Md-5Ir"/>
+                                    <constraint firstAttribute="trailing" secondItem="OSP-Mr-g3M" secondAttribute="trailing" constant="31" id="nho-Zh-iMj"/>
+                                    <constraint firstItem="dZK-ye-xpk" firstAttribute="leading" secondItem="6sY-HA-5z9" secondAttribute="leading" constant="10" id="o0e-5m-f3I"/>
+                                    <constraint firstAttribute="bottom" secondItem="OSP-Mr-g3M" secondAttribute="bottom" constant="10" id="tfs-BO-m2E"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -60,6 +61,10 @@
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1400"/>
+                    <connections>
+                        <outlet property="portfolioWidthContraint" destination="G51-es-0zf" id="oXK-VW-ma5"/>
+                        <outlet property="scrollView" destination="6sY-HA-5z9" id="4vN-I9-chV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>

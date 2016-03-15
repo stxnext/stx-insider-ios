@@ -11,8 +11,19 @@ import QuartzCore
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var portfolioWidthContraint: NSLayoutConstraint!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+        let screenSize = UIScreen.mainScreen().bounds
+        let width = screenSize.width
+        portfolioWidthContraint.constant=width - 20
+        
+        scrollView.scrollEnabled = true
+        //self.scrollView.contentSize.width = width - 20;
         // Do any additional setup after loading the view, typically from a nib.
     }
 
