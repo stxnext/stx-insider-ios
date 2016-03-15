@@ -18,7 +18,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         
 
-        let screenSize = UIScreen.mainScreen().bounds
+        let screenSize = self.view.frame
         let width = screenSize.width
         portfolioWidthContraint.constant=width - 20
         
