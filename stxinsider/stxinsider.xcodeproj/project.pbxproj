@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		189F92E91C972794009E5B86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F92E81C972794009E5B86 /* AppDelegate.swift */; };
-		189F92EB1C972794009E5B86 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F92EA1C972794009E5B86 /* FirstViewController.swift */; };
-		189F92ED1C972794009E5B86 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F92EC1C972794009E5B86 /* SecondViewController.swift */; };
 		189F92F01C972794009E5B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189F92EE1C972794009E5B86 /* Main.storyboard */; };
 		189F92F21C972794009E5B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189F92F11C972794009E5B86 /* Assets.xcassets */; };
 		189F92F51C972794009E5B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189F92F31C972794009E5B86 /* LaunchScreen.storyboard */; };
 		189F93001C972794009E5B86 /* stxinsiderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F92FF1C972794009E5B86 /* stxinsiderTests.swift */; };
 		189F930B1C972794009E5B86 /* stxinsiderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F930A1C972794009E5B86 /* stxinsiderUITests.swift */; };
+		2752F0F61CA2D7420038C0AC /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752F0F51CA2D7420038C0AC /* PortfolioViewController.swift */; };
+		27F6BEC51CA2B91F00AF6CD5 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F6BEC41CA2B91F00AF6CD5 /* MainMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 /* Begin PBXFileReference section */
 		189F92E51C972794009E5B86 /* stxinsider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stxinsider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189F92E81C972794009E5B86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		189F92EA1C972794009E5B86 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		189F92EC1C972794009E5B86 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		189F92EF1C972794009E5B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		189F92F11C972794009E5B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		189F92F41C972794009E5B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		189F93061C972794009E5B86 /* stxinsiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stxinsiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		189F930A1C972794009E5B86 /* stxinsiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stxinsiderUITests.swift; sourceTree = "<group>"; };
 		189F930C1C972794009E5B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2752F0F51CA2D7420038C0AC /* PortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		27F6BEC41CA2B91F00AF6CD5 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +99,13 @@
 		189F92E71C972794009E5B86 /* stxinsider */ = {
 			isa = PBXGroup;
 			children = (
+				189F92F61C972794009E5B86 /* Info.plist */,
 				189F92E81C972794009E5B86 /* AppDelegate.swift */,
-				189F92EA1C972794009E5B86 /* FirstViewController.swift */,
-				189F92EC1C972794009E5B86 /* SecondViewController.swift */,
-				189F92EE1C972794009E5B86 /* Main.storyboard */,
+				27F6BEC41CA2B91F00AF6CD5 /* MainMenuViewController.swift */,
+				2752F0F51CA2D7420038C0AC /* PortfolioViewController.swift */,
 				189F92F11C972794009E5B86 /* Assets.xcassets */,
 				189F92F31C972794009E5B86 /* LaunchScreen.storyboard */,
-				189F92F61C972794009E5B86 /* Info.plist */,
+				189F92EE1C972794009E5B86 /* Main.storyboard */,
 			);
 			path = stxinsider;
 			sourceTree = "<group>";
@@ -260,9 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				189F92ED1C972794009E5B86 /* SecondViewController.swift in Sources */,
+				27F6BEC51CA2B91F00AF6CD5 /* MainMenuViewController.swift in Sources */,
+				2752F0F61CA2D7420038C0AC /* PortfolioViewController.swift in Sources */,
 				189F92E91C972794009E5B86 /* AppDelegate.swift in Sources */,
-				189F92EB1C972794009E5B86 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +407,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = stxinsider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stxnext.ios.stxinsider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -421,6 +422,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = stxinsider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stxnext.ios.stxinsider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -495,6 +497,7 @@
 				189F93111C972794009E5B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		189F93121C972794009E5B86 /* Build configuration list for PBXNativeTarget "stxinsiderTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +506,7 @@
 				189F93141C972794009E5B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		189F93151C972794009E5B86 /* Build configuration list for PBXNativeTarget "stxinsiderUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +515,7 @@
 				189F93171C972794009E5B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
