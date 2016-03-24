@@ -10,10 +10,17 @@ import UIKit
 
 class EventDetailsViewController: BaseViewController {
 
+    // MARK: View Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.translucent = true
     }
 
     override func didReceiveMemoryWarning() {

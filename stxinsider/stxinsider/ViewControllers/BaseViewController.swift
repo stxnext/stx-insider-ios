@@ -12,6 +12,7 @@ class BaseViewController: UIViewController {
 
     var controllerTitle: String? = ""
     var navbarVisible: Bool = true
+    var provideNavbarAnimation: Bool = true
     
     // MARK: View Lifecycle
     
@@ -23,7 +24,8 @@ class BaseViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = NSLocalizedString(controllerTitle != nil ? controllerTitle! : "", comment: "")
-        navigationController?.setNavigationBarHidden(!navbarVisible, animated: true)
+        navigationController?.navigationBar.translucent = false
+        navigationController?.setNavigationBarHidden(!navbarVisible, animated: provideNavbarAnimation)
     }
 
     override func didReceiveMemoryWarning() {

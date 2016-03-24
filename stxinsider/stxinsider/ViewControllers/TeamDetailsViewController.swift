@@ -10,6 +10,8 @@ import UIKit
 
 class TeamDetailsViewController: BaseViewController {
 
+    // MARK: View Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +23,12 @@ class TeamDetailsViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: User Interface
+    
+    override func configureGui() {
+        super.configureGui()
+        controllerTitle = "Team description"
+    }
 
     /*
     // MARK: - Navigation

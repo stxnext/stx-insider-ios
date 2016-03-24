@@ -35,7 +35,7 @@ class MainMenuViewController: BaseViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-
+        navigationController?.navigationBar.translucent = true
     }
     
     override func didReceiveMemoryWarning() {

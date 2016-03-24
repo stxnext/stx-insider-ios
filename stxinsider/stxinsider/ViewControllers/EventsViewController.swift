@@ -27,7 +27,7 @@ class EventsViewController: BaseViewController {
     
     override func configureGui() {
         super.configureGui()
-
+        controllerTitle = "Upcoming Events"
     }
     
     /*

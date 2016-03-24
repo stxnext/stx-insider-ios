@@ -22,8 +22,6 @@
 		27C489881CA3EB9D0095C483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C489871CA3EB9D0095C483 /* AppDelegate.swift */; };
 		27C4898C1CA3F25E0095C483 /* TeamDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4898B1CA3F25E0095C483 /* TeamDetailsViewController.swift */; };
 		27C4898E1CA3F2A30095C483 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4898D1CA3F2A30095C483 /* EventDetailsViewController.swift */; };
-		27C489901CA3F2EE0095C483 /* OfficeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4898F1CA3F2EE0095C483 /* OfficeDetailsViewController.swift */; };
-		27C489921CA3F3210095C483 /* NewsChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C489911CA3F3210095C483 /* NewsChannelsViewController.swift */; };
 		27C489941CA3F4790095C483 /* EventItemDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C489931CA3F4790095C483 /* EventItemDescriptionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +63,6 @@
 		27C489871CA3EB9D0095C483 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C4898B1CA3F25E0095C483 /* TeamDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDetailsViewController.swift; sourceTree = "<group>"; };
 		27C4898D1CA3F2A30095C483 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
-		27C4898F1CA3F2EE0095C483 /* OfficeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficeDetailsViewController.swift; sourceTree = "<group>"; };
-		27C489911CA3F3210095C483 /* NewsChannelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsChannelsViewController.swift; sourceTree = "<group>"; };
 		27C489931CA3F4790095C483 /* EventItemDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventItemDescriptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,8 +185,6 @@
 			children = (
 				27C4898B1CA3F25E0095C483 /* TeamDetailsViewController.swift */,
 				27C4898D1CA3F2A30095C483 /* EventDetailsViewController.swift */,
-				27C4898F1CA3F2EE0095C483 /* OfficeDetailsViewController.swift */,
-				27C489911CA3F3210095C483 /* NewsChannelsViewController.swift */,
 				27C489931CA3F4790095C483 /* EventItemDescriptionViewController.swift */,
 			);
 			name = NextLevels;
@@ -330,12 +324,10 @@
 			files = (
 				27C489881CA3EB9D0095C483 /* AppDelegate.swift in Sources */,
 				27C489781CA3EB4D0095C483 /* OfficeViewController.swift in Sources */,
-				27C489921CA3F3210095C483 /* NewsChannelsViewController.swift in Sources */,
 				27C489761CA3EB4D0095C483 /* MainMenuViewController.swift in Sources */,
 				27C489941CA3F4790095C483 /* EventItemDescriptionViewController.swift in Sources */,
 				27C489741CA3EB4D0095C483 /* BaseViewController.swift in Sources */,
 				27C489771CA3EB4D0095C483 /* NewsViewController.swift in Sources */,
-				27C489901CA3F2EE0095C483 /* OfficeDetailsViewController.swift in Sources */,
 				27C4897A1CA3EB4D0095C483 /* TeamsViewController.swift in Sources */,
 				27C4898E1CA3F2A30095C483 /* EventDetailsViewController.swift in Sources */,
 				27C489791CA3EB4D0095C483 /* PortfolioViewController.swift in Sources */,
