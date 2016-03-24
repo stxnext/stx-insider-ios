@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import PortfolioViewController
 
 class MainMenuViewController: UIViewController {
     
@@ -22,6 +21,11 @@ class MainMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureGui()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
@@ -59,7 +63,9 @@ class MainMenuViewController: UIViewController {
     func handleTap(recognizer: UITapGestureRecognizer) {
         print("Action Performed: \(recognizer.view!.tag)")
         
-        //controller = storyboard?.instantiateViewControllerWithIdentifier("PortfolioViewController")
-        //navigationController?.pushViewController(controller, animated: true)
+        guard let controller = storyboard?.instantiateViewControllerWithIdentifier("PortfolioViewController") else {
+            return
+        }
+        navigationController?.pushViewController(controller, animated: true)
     }
 }
