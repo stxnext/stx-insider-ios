@@ -1,6 +1,6 @@
 //
 //  PortfolioViewController.swift
-//  stxinsider
+//  STXInsider
 //
 //  Created by MK_STX on 23/03/16.
 //  Copyright © 2016 stxnext. All rights reserved.

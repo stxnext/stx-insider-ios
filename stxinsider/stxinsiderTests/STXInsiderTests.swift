@@ -1,15 +1,15 @@
 //
-//  stxinsiderTests.swift
-//  stxinsiderTests
+//  STXInsiderTests.swift
+//  STXInsiderTests
 //
 //  Created by Bartosz Kosarzycki on 3/14/16.
 //  Copyright © 2016 stxnext. All rights reserved.
 //
 
 import XCTest
-@testable import stxinsider
+@testable import STXInsider
 
-class stxinsiderTests: XCTestCase {
+class STXInsiderTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

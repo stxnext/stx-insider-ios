@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:stxinsider.xcodeproj">
+      location = "self:/Users/MK_STX/Desktop/STXInsider/STXInsider_iOS/stxinsider/STXInsider.xcodeproj">
    </FileRef>
 </Workspace>

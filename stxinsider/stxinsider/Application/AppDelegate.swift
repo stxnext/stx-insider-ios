@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  stxinsider
+//  STXInsider
 //
 //  Created by Bartosz Kosarzycki on 3/14/16.
 //  Copyright © 2016 stxnext. All rights reserved.

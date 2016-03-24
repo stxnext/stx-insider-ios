@@ -1,6 +1,6 @@
 //
 //  EventsViewController.swift
-//  stxinsider
+//  STXInsider
 //
 //  Created by MK_STX on 24/03/16.
 //  Copyright © 2016 stxnext. All rights reserved.
