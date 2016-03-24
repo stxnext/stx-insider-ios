@@ -137,12 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				27C4896D1CA3EB4D0095C483 /* BaseViewController.swift */,
-				27C4896E1CA3EB4D0095C483 /* EventsViewController.swift */,
-				27C4896F1CA3EB4D0095C483 /* MainMenuViewController.swift */,
-				27C489701CA3EB4D0095C483 /* NewsViewController.swift */,
-				27C489711CA3EB4D0095C483 /* OfficeViewController.swift */,
-				27C489721CA3EB4D0095C483 /* PortfolioViewController.swift */,
-				27C489731CA3EB4D0095C483 /* TeamsViewController.swift */,
+				27C489891CA3ECBA0095C483 /* FirstLevel */,
+				27C4898A1CA3ECD70095C483 /* NextLevels */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -163,6 +159,26 @@
 				27C489871CA3EB9D0095C483 /* AppDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		27C489891CA3ECBA0095C483 /* FirstLevel */ = {
+			isa = PBXGroup;
+			children = (
+				27C4896E1CA3EB4D0095C483 /* EventsViewController.swift */,
+				27C4896F1CA3EB4D0095C483 /* MainMenuViewController.swift */,
+				27C489701CA3EB4D0095C483 /* NewsViewController.swift */,
+				27C489711CA3EB4D0095C483 /* OfficeViewController.swift */,
+				27C489721CA3EB4D0095C483 /* PortfolioViewController.swift */,
+				27C489731CA3EB4D0095C483 /* TeamsViewController.swift */,
+			);
+			name = FirstLevel;
+			sourceTree = "<group>";
+		};
+		27C4898A1CA3ECD70095C483 /* NextLevels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NextLevels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
