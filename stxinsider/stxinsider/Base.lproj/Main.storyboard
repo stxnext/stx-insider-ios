@@ -124,7 +124,7 @@
                         <outletCollection property="itemsCollection" destination="5MV-y8-IvE" collectionClass="NSMutableArray" id="9UT-UB-Wuw"/>
                         <outletCollection property="itemsCollection" destination="3ut-BM-Fsi" collectionClass="NSMutableArray" id="oCt-Ht-Eqp"/>
                         <outletCollection property="itemsCollection" destination="wxr-zX-B1O" collectionClass="NSMutableArray" id="Ky7-ro-ivk"/>
-                        <segue destination="M0I-Fd-XnV" kind="show" id="Ep8-R6-g8z"/>
+                        <segue destination="M0I-Fd-XnV" kind="show" identifier="PortfolioSegue" id="Ep8-R6-g8z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t2X-hr-i1P" userLabel="First Responder" sceneMemberID="firstResponder"/>

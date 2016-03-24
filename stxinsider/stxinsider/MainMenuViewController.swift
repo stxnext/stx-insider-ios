@@ -8,6 +8,14 @@
 
 import UIKit
 
+enum MainMenuItem : Int {
+    case Portfolio = 100
+    case Teams = 200
+    case Events = 300
+    case Office = 400
+    case News = 500
+}
+
 class MainMenuViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -17,6 +25,8 @@ class MainMenuViewController: UIViewController {
     @IBOutlet weak var headerWidthConstraint: NSLayoutConstraint!
     
     static let Margin : CGFloat = 10.0
+    
+    // MARK: View Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +42,8 @@ class MainMenuViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: User Interface
     
     func configureGui() {
         adjustWidth()
@@ -60,12 +72,45 @@ class MainMenuViewController: UIViewController {
         }
     }
     
+    // MARK: Actions
+    
     func handleTap(recognizer: UITapGestureRecognizer) {
         print("Action Performed: \(recognizer.view!.tag)")
         
-        guard let controller = storyboard?.instantiateViewControllerWithIdentifier("PortfolioViewController") else {
+        guard let currentTag = MainMenuItem(rawValue: recognizer.view!.tag) else {
             return
         }
-        navigationController?.pushViewController(controller, animated: true)
+        
+        var segueId : String?
+        
+        switch currentTag {
+        case .Portfolio:
+            segueId = "PortfolioSegue"
+            break
+        case .Teams:
+            break
+        case .Events:
+            break
+        case .Office:
+            break
+        case .News:
+            break
+        }
+        
+        guard segueId != nil else {
+            return
+        }
+        
+        performSegueWithIdentifier(segueId!, sender: nil)
+    }
+    
+    // MARK: Navigation
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        return true
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
     }
 }
