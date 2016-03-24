@@ -1,24 +1,21 @@
 //
-//  PortfolioViewController.swift
+//  EventsViewController.swift
 //  stxinsider
 //
-//  Created by MK_STX on 23/03/16.
+//  Created by MK_STX on 24/03/16.
 //  Copyright © 2016 stxnext. All rights reserved.
 //
 
 import UIKit
 
-class PortfolioViewController: UIViewController {
+class EventsViewController: BaseViewController {
 
+    // MARK: View Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = NSLocalizedString("Portfolio", comment: "")
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: true)
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +23,13 @@ class PortfolioViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: User Interface
+    
+    override func configureGui() {
+        super.configureGui()
 
+    }
+    
     /*
     // MARK: - Navigation
 

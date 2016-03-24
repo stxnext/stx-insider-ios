@@ -125,6 +125,10 @@
                         <outletCollection property="itemsCollection" destination="3ut-BM-Fsi" collectionClass="NSMutableArray" id="oCt-Ht-Eqp"/>
                         <outletCollection property="itemsCollection" destination="wxr-zX-B1O" collectionClass="NSMutableArray" id="Ky7-ro-ivk"/>
                         <segue destination="M0I-Fd-XnV" kind="show" identifier="PortfolioSegue" id="Ep8-R6-g8z"/>
+                        <segue destination="B9M-cH-XJL" kind="show" identifier="TeamsSegue" id="uYe-sB-dzX"/>
+                        <segue destination="APh-Gj-emZ" kind="show" identifier="EventsSegue" id="UYF-OC-aWg"/>
+                        <segue destination="weP-QV-X8l" kind="show" identifier="OfficeSegue" id="Reo-HQ-vEk"/>
+                        <segue destination="TnW-iY-6Tv" kind="show" identifier="NewsSegue" id="BJm-LA-a6u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t2X-hr-i1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -149,7 +153,87 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K05-MT-PWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2490" y="-3201.5"/>
+            <point key="canvasLocation" x="-2438" y="-4252"/>
+        </scene>
+        <!--Teams View Controller-->
+        <scene sceneID="fgW-iA-Y60">
+            <objects>
+                <viewController id="B9M-cH-XJL" customClass="TeamsViewController" customModule="stxinsider" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UM9-V4-OgD"/>
+                        <viewControllerLayoutGuide type="bottom" id="SUQ-Zx-C7U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s34-bz-N6f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KdV-Wu-ycg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2438" y="-3551"/>
+        </scene>
+        <!--Events View Controller-->
+        <scene sceneID="eWn-o8-PdG">
+            <objects>
+                <viewController id="APh-Gj-emZ" customClass="EventsViewController" customModule="stxinsider" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H66-kH-lFb"/>
+                        <viewControllerLayoutGuide type="bottom" id="EJI-xr-FPY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I2N-C1-VG2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ANe-sf-hx0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2438" y="-2863"/>
+        </scene>
+        <!--Office View Controller-->
+        <scene sceneID="2Qi-KD-TcV">
+            <objects>
+                <viewController id="weP-QV-X8l" customClass="OfficeViewController" customModule="stxinsider" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yE8-Vb-6Jz"/>
+                        <viewControllerLayoutGuide type="bottom" id="SoA-NP-aRh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gf9-Ng-Z9T">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i6X-Hk-A4l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2438" y="-2163"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="mxu-h4-nBg">
+            <objects>
+                <viewController id="TnW-iY-6Tv" customClass="NewsViewController" customModule="stxinsider" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Dq-LJ-QuQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="LpT-KY-m7n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DOZ-xc-w0J">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bmJ-se-S6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2438" y="-1453"/>
         </scene>
     </scenes>
     <resources>

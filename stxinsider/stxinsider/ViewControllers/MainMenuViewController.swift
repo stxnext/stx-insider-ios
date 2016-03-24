@@ -16,7 +16,7 @@ enum MainMenuItem : Int {
     case News = 500
 }
 
-class MainMenuViewController: UIViewController {
+class MainMenuViewController: BaseViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var itemsCollection: [UIImageView]!
@@ -30,12 +30,12 @@ class MainMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureGui()
+        
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: true)
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -45,7 +45,9 @@ class MainMenuViewController: UIViewController {
     
     // MARK: User Interface
     
-    func configureGui() {
+    override func configureGui() {
+        super.configureGui()
+        navbarVisible = false
         adjustWidth()
         provideViewsWithRecognizers(itemsCollection)
         setTagsForViews(itemsCollection)
@@ -80,31 +82,28 @@ class MainMenuViewController: UIViewController {
         guard let currentTag = MainMenuItem(rawValue: recognizer.view!.tag) else {
             return
         }
-        
-        var segueId : String?
-        
-        switch currentTag {
-        case .Portfolio:
-            segueId = "PortfolioSegue"
-            break
-        case .Teams:
-            break
-        case .Events:
-            break
-        case .Office:
-            break
-        case .News:
-            break
-        }
-        
-        guard segueId != nil else {
+        guard let segueId = segueIdForMenuItemTag(currentTag) else {
             return
         }
-        
-        performSegueWithIdentifier(segueId!, sender: nil)
+        performSegueWithIdentifier(segueId, sender: nil)
     }
     
     // MARK: Navigation
+    
+    func segueIdForMenuItemTag(menuTag: MainMenuItem) -> String? {
+        switch menuTag {
+        case .Portfolio:
+            return "PortfolioSegue"
+        case .Teams:
+            return "TeamsSegue"
+        case .Events:
+            return "EventsSegue"
+        case .Office:
+            return "OfficeSegue"
+        case .News:
+            return "NewsSegue"
+        }
+    }
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
         return true
