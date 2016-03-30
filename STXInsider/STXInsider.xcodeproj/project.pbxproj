@@ -11,6 +11,7 @@
 		189F930B1C972794009E5B86 /* STXInsiderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F930A1C972794009E5B86 /* STXInsiderUITests.swift */; };
 		27B58CA31CABD08E00FDF3F1 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B58CA21CABD08E00FDF3F1 /* ColorHelper.swift */; };
 		27B58CA51CABD0BA00FDF3F1 /* AppearanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B58CA41CABD0BA00FDF3F1 /* AppearanceManager.swift */; };
+		27B58CBA1CABF78100FDF3F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B58CB91CABF78100FDF3F1 /* AppDelegate.swift */; };
 		27C489741CA3EB4D0095C483 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4896D1CA3EB4D0095C483 /* BaseViewController.swift */; };
 		27C489751CA3EB4D0095C483 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4896E1CA3EB4D0095C483 /* EventsViewController.swift */; };
 		27C489761CA3EB4D0095C483 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4896F1CA3EB4D0095C483 /* MainMenuViewController.swift */; };
@@ -21,7 +22,6 @@
 		27C489821CA3EB840095C483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C4897C1CA3EB840095C483 /* Assets.xcassets */; };
 		27C489831CA3EB840095C483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C4897D1CA3EB840095C483 /* LaunchScreen.storyboard */; };
 		27C489841CA3EB840095C483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C4897F1CA3EB840095C483 /* Main.storyboard */; };
-		27C489881CA3EB9D0095C483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C489871CA3EB9D0095C483 /* AppDelegate.swift */; };
 		27C4898C1CA3F25E0095C483 /* TeamDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4898B1CA3F25E0095C483 /* TeamDetailsViewController.swift */; };
 		27C4898E1CA3F2A30095C483 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4898D1CA3F2A30095C483 /* EventDetailsViewController.swift */; };
 		27C489941CA3F4790095C483 /* EventItemDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C489931CA3F4790095C483 /* EventItemDescriptionViewController.swift */; };
@@ -58,6 +58,7 @@
 		189F930C1C972794009E5B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27B58CA21CABD08E00FDF3F1 /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		27B58CA41CABD0BA00FDF3F1 /* AppearanceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceManager.swift; sourceTree = "<group>"; };
+		27B58CB91CABF78100FDF3F1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = STXInsider/Application/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		27C4896D1CA3EB4D0095C483 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		27C4896E1CA3EB4D0095C483 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		27C4896F1CA3EB4D0095C483 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		27C4897C1CA3EB840095C483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27C4897E1CA3EB840095C483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27C489801CA3EB840095C483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		27C489871CA3EB9D0095C483 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C4898B1CA3F25E0095C483 /* TeamDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDetailsViewController.swift; sourceTree = "<group>"; };
 		27C4898D1CA3F2A30095C483 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		27C489931CA3F4790095C483 /* EventItemDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventItemDescriptionViewController.swift; sourceTree = "<group>"; };
@@ -215,7 +215,7 @@
 		27C489861CA3EB9D0095C483 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				27C489871CA3EB9D0095C483 /* AppDelegate.swift */,
+				27B58CB91CABF78100FDF3F1 /* AppDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -519,7 +519,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27C489881CA3EB9D0095C483 /* AppDelegate.swift in Sources */,
 				27C489781CA3EB4D0095C483 /* OfficeViewController.swift in Sources */,
 				27C489761CA3EB4D0095C483 /* MainMenuViewController.swift in Sources */,
 				27C489941CA3F4790095C483 /* EventItemDescriptionViewController.swift in Sources */,
@@ -528,6 +527,7 @@
 				27C4897A1CA3EB4D0095C483 /* TeamsViewController.swift in Sources */,
 				27C4898E1CA3F2A30095C483 /* EventDetailsViewController.swift in Sources */,
 				27B58CA31CABD08E00FDF3F1 /* ColorHelper.swift in Sources */,
+				27B58CBA1CABF78100FDF3F1 /* AppDelegate.swift in Sources */,
 				27C489791CA3EB4D0095C483 /* PortfolioViewController.swift in Sources */,
 				27C4898C1CA3F25E0095C483 /* TeamDetailsViewController.swift in Sources */,
 				27B58CA51CABD0BA00FDF3F1 /* AppearanceManager.swift in Sources */,
