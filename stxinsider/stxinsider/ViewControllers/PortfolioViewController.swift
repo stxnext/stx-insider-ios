@@ -28,7 +28,7 @@ class PortfolioViewController: BaseViewController {
         super.configureGui()
         controllerTitle = "Portfolio"
     }
-
+    
     /*
     // MARK: - Navigation
 

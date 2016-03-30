@@ -34,7 +34,7 @@ class BaseViewController: UIViewController {
     }
     
     // MARK: User Interface
-    
+        
     func configureGui() {
 
     }

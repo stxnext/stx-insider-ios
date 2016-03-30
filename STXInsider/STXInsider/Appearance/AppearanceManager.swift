@@ -33,6 +33,7 @@ class AppearanceManager: NSObject {
             let appearance = UINavigationBar.appearance()
             appearance.barTintColor = navBarColor
             appearance.tintColor = navBarContentColor;
+            appearance.titleTextAttributes = [NSForegroundColorAttributeName: navBarContentColor]
         }
         else {  // tint all nav bars
             let navBar = navigationBar!
