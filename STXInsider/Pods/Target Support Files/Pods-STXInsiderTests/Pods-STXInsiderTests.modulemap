@@ -1,0 +1,6 @@
+framework module Pods_STXInsiderTests {
+  umbrella header "Pods-STXInsiderTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

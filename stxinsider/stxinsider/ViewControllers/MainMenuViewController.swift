@@ -63,7 +63,7 @@ class MainMenuViewController: BaseViewController {
     func provideViewsWithRecognizers(views: [UIView]) {
         for view in views {
             view.userInteractionEnabled = true
-            let recognizer = UITapGestureRecognizer(target: self, action: "handleTap:")
+            let recognizer = UITapGestureRecognizer(target: self, action: #selector(MainMenuViewController.handleTap(_:)))
             view.addGestureRecognizer(recognizer)
         }
     }
