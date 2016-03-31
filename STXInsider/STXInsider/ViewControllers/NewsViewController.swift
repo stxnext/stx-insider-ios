@@ -32,6 +32,9 @@ class NewsViewController: BaseViewController {
     override func configureGui() {
         super.configureGui()
         controllerTitle = "STXInsider"
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 285.0
     }
     
     // MARK: Data Management
@@ -81,7 +84,7 @@ class NewsViewController: BaseViewController {
     // MARK: UITableViewDelegate
 
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 200.0
+        return UITableViewAutomaticDimension
     }
     
     /*

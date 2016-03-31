@@ -321,18 +321,34 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="285" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DiK-8C-eL9">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="qRA-F0-mVP">
+                                    <rect key="frame" x="0.0" y="307" width="600" height="10"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsItemCell" rowHeight="285" id="ZQ1-rV-T1t" customClass="NewsItemCell" customModule="STXInsider" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="285"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsItemCell" rowHeight="279" id="ZQ1-rV-T1t" customClass="NewsItemCell" customModule="STXInsider" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="279"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZQ1-rV-T1t" id="F3q-g4-dgi">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="285"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="279"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blog" translatesAutoresizingMaskIntoConstraints="NO" id="Xmo-Cc-Vpl" userLabel="Portfolio">
-                                                    <rect key="frame" x="10" y="8" width="580" height="269"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blog" translatesAutoresizingMaskIntoConstraints="NO" id="Xmo-Cc-Vpl">
+                                                    <rect key="frame" x="10" y="10" width="580" height="269"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="580" id="1ys-J4-OJu"/>
+                                                        <constraint firstAttribute="width" secondItem="Xmo-Cc-Vpl" secondAttribute="height" multiplier="580:269" id="ueM-Qq-3Uk"/>
+                                                        <constraint firstAttribute="width" secondItem="Xmo-Cc-Vpl" secondAttribute="height" multiplier="580:269" id="xOd-nP-fyg"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Xmo-Cc-Vpl" secondAttribute="trailing" constant="10" id="CcR-H9-TyC"/>
+                                                <constraint firstItem="Xmo-Cc-Vpl" firstAttribute="top" secondItem="F3q-g4-dgi" secondAttribute="top" constant="10" id="JMb-hu-5xz"/>
+                                                <constraint firstAttribute="bottom" secondItem="Xmo-Cc-Vpl" secondAttribute="bottom" id="V6H-RB-YXi"/>
+                                                <constraint firstItem="Xmo-Cc-Vpl" firstAttribute="leading" secondItem="F3q-g4-dgi" secondAttribute="leading" constant="10" id="jBF-f6-AyH"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="itemImageView" destination="Xmo-Cc-Vpl" id="yQu-5q-6NR"/>
