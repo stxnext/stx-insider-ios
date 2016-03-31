@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		189F93001C972794009E5B86 /* STXInsiderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F92FF1C972794009E5B86 /* STXInsiderTests.swift */; };
 		189F930B1C972794009E5B86 /* STXInsiderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F930A1C972794009E5B86 /* STXInsiderUITests.swift */; };
+		2757A9C61CAD017D006364F0 /* NewsItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757A9C51CAD017D006364F0 /* NewsItemCell.swift */; };
 		27B58CA31CABD08E00FDF3F1 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B58CA21CABD08E00FDF3F1 /* ColorHelper.swift */; };
 		27B58CA51CABD0BA00FDF3F1 /* AppearanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B58CA41CABD0BA00FDF3F1 /* AppearanceManager.swift */; };
 		27B58CBA1CABF78100FDF3F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B58CB91CABF78100FDF3F1 /* AppDelegate.swift */; };
@@ -56,6 +57,7 @@
 		189F93061C972794009E5B86 /* STXInsiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STXInsiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		189F930A1C972794009E5B86 /* STXInsiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STXInsiderUITests.swift; sourceTree = "<group>"; };
 		189F930C1C972794009E5B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2757A9C51CAD017D006364F0 /* NewsItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItemCell.swift; sourceTree = "<group>"; };
 		27B58CA21CABD08E00FDF3F1 /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		27B58CA41CABD0BA00FDF3F1 /* AppearanceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceManager.swift; sourceTree = "<group>"; };
 		27B58CB91CABF78100FDF3F1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = STXInsider/Application/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
@@ -147,6 +149,7 @@
 			children = (
 				27B58C9E1CABCF8400FDF3F1 /* Appearance */,
 				27C489861CA3EB9D0095C483 /* Application */,
+				2757A9C21CAD0024006364F0 /* Cells */,
 				27C4897B1CA3EB840095C483 /* Resources */,
 				27C4896C1CA3EB4D0095C483 /* ViewControllers */,
 			);
@@ -173,6 +176,15 @@
 			name = STXInsiderUITests;
 			path = stxinsiderUITests;
 			sourceTree = "<group>";
+		};
+		2757A9C21CAD0024006364F0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2757A9C51CAD017D006364F0 /* NewsItemCell.swift */,
+			);
+			name = Cells;
+			path = STXInsider/Cells;
+			sourceTree = SOURCE_ROOT;
 		};
 		27B58C9E1CABCF8400FDF3F1 /* Appearance */ = {
 			isa = PBXGroup;
@@ -532,6 +544,7 @@
 				27C4898C1CA3F25E0095C483 /* TeamDetailsViewController.swift in Sources */,
 				27B58CA51CABD0BA00FDF3F1 /* AppearanceManager.swift in Sources */,
 				27C489751CA3EB4D0095C483 /* EventsViewController.swift in Sources */,
+				2757A9C61CAD017D006364F0 /* NewsItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

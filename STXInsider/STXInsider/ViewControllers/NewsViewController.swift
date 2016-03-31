@@ -10,12 +10,16 @@ import UIKit
 
 class NewsViewController: BaseViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var dataSource: [NewsItem]?
+    
     // MARK: View Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        dataSource = createDataSource()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +33,57 @@ class NewsViewController: BaseViewController {
         super.configureGui()
         controllerTitle = "STXInsider"
     }
+    
+    // MARK: Data Management
+    
+    func createDataSource() -> [NewsItem] {
+        var ds = [NewsItem]()
+        
+        var item = NewsItem(itemType:NewsItemType.Blog)
+        item.image = UIImage(named: "blog")
+        ds.append(item)
+        item = NewsItem(itemType:NewsItemType.Twitter)
+        item.image = UIImage(named: "twitter")
+        ds.append(item)
+        item = NewsItem(itemType:NewsItemType.Facebook)
+        item.image = UIImage(named: "facebook")
+        ds.append(item)
+        item = NewsItem(itemType:NewsItemType.YouTube)
+        item.image = UIImage(named: "youtube")
+        ds.append(item)
+        
+        return ds
+    }
+    
+    // MARK: UITableViewDataSource
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if dataSource != nil {
+            return dataSource!.count
+        }
+        return 0
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cellIdentifier = "NewsItemCell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! NewsItemCell
+        
+        let item = dataSource![indexPath.row]
+        cell.itemImageView.image = item.image
+        
+        return cell
+    }
+    
+    // MARK: UITableViewDelegate
 
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 200.0
+    }
+    
     /*
     // MARK: - Navigation
 
