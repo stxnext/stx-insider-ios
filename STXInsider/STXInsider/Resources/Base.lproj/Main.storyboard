@@ -337,9 +337,7 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blog" translatesAutoresizingMaskIntoConstraints="NO" id="Xmo-Cc-Vpl">
                                                     <rect key="frame" x="10" y="10" width="580" height="269"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="580" id="1ys-J4-OJu"/>
                                                         <constraint firstAttribute="width" secondItem="Xmo-Cc-Vpl" secondAttribute="height" multiplier="580:269" id="ueM-Qq-3Uk"/>
-                                                        <constraint firstAttribute="width" secondItem="Xmo-Cc-Vpl" secondAttribute="height" multiplier="580:269" id="xOd-nP-fyg"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>

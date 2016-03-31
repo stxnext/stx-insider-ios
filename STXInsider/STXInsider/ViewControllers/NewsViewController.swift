@@ -10,6 +10,11 @@ import UIKit
 
 class NewsViewController: BaseViewController {
 
+    static let BlogUrl = "http://blog.stxnext.com"
+    static let TwitterUrl = "https://twitter.com/STXNext"
+    static let FacebookUrl = "https://www.facebook.com/StxNext"
+    static let YouTubeUrl = "https://www.youtube.com/channel/UCI1AvU1piMZ80LXboJmRroQ"
+    
     @IBOutlet weak var tableView: UITableView!
     
     var dataSource: [NewsItem]?
@@ -85,6 +90,15 @@ class NewsViewController: BaseViewController {
 
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("Tapped row \(indexPath.row)")
+        
+        let item = dataSource![indexPath.row]
+        let type = item.itemType
+        
+        
     }
     
     /*
